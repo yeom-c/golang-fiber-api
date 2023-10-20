@@ -2,9 +2,10 @@ module github.com/yeom-c/golang-fiber-api
 
 go 1.21.3
 
+require github.com/gofiber/fiber/v2 v2.50.0
+
 require (
 	github.com/andybalholm/brotli v1.0.6 // indirect
-	github.com/gofiber/fiber/v2 v2.50.0 // indirect
 	github.com/google/uuid v1.3.1 // indirect
 	github.com/klauspost/compress v1.17.1 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
