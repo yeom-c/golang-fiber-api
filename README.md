@@ -12,7 +12,6 @@
 
 ```
 .
-├── cmd             # cmd tool
 ├── config          # 설정 관련 데이터들을 제공
 │   ├── constant    # constant 정의
 │   ├── enum        # enum 정의
@@ -26,6 +25,8 @@
 ├── repository      # 데이터베이스 CRUD 로직 처리
 ├── route           # api route
 ├── service         # 비지니스 로직 처리
+├── tool            # 개발용 tool
+│   └── cmd         # cmd tool
 └── util            # util 함수 모음
 ```
 
