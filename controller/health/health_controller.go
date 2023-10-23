@@ -1,6 +1,10 @@
 package health
 
-import "github.com/gofiber/fiber/v2"
+import (
+	"github.com/gofiber/fiber/v2"
+	enum_res "github.com/yeom-c/golang-fiber-api/config/enum/response"
+	response "github.com/yeom-c/golang-fiber-api/util/reponse"
+)
 
 type HealthController struct{}
 
@@ -15,7 +19,5 @@ func NewHealthController() *HealthController {
 }
 
 func (c *HealthController) Check(ctx *fiber.Ctx) error {
-	return ctx.Status(fiber.StatusOK).JSON(fiber.Map{
-		"message": "OK",
-	})
+	return response.NewResponse(enum_res.Success, "OK", nil).Send(ctx)
 }
