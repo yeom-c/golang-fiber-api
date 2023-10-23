@@ -24,10 +24,10 @@ func (r *Response) Send(ctx *fiber.Ctx) error {
 }
 
 func codeToStatus(code enum_res.Code) int {
-	status := fiber.StatusBadRequest
+	status := fiber.StatusInternalServerError
 	switch code {
 	case enum_res.Fail:
-		status = fiber.StatusInternalServerError
+		status = fiber.StatusBadRequest
 	case enum_res.Success:
 		status = fiber.StatusOK
 	}
