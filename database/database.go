@@ -3,14 +3,14 @@ package database
 import "sync"
 
 var once sync.Once
-var dbInstance *database
+var dbInstance *DB
 
-type database struct{}
+type DB struct{}
 
-func GetInstance() *database {
+func GetDB() *DB {
 	once.Do(func() {
 		if dbInstance == nil {
-			dbInstance = &database{}
+			dbInstance = &DB{}
 		}
 	})
 
