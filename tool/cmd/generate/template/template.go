@@ -294,8 +294,8 @@ func TestDelete(t *testing.T) {}
 	ModelTemplate = `package ` + snakeNameFormat + `
 
 type ` + pascalNameFormat + ` struct {
-	CreateAt string ` + "`json:\"create_at\"`" + `
-	UpdateAt string ` + "`json:\"update_at\"`" + `
+	CreatedAt string ` + "`json:\"created_at\"`" + `
+	UpdatedAt string ` + "`json:\"updated_at\"`" + `
 }
 `
 )
