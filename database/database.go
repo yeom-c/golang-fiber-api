@@ -1,6 +1,8 @@
 package database
 
-import "sync"
+import (
+	"sync"
+)
 
 var once sync.Once
 var dbInstance *DB
